@@ -1,6 +1,6 @@
 :root {
-  --branding-color: #6c63ff;
-  --secondary-color: #f9f7fe;
+  ----branding-color: #61b292;
+  --secondary-color: #f1e8a7;
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
 }
@@ -10,11 +10,17 @@ body {
 }
 
 h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h2 {
+  font-family: var(--heading-font-family);
+  font-weight: bold;
+}
+
+h3 {
+  font-family: var(--default-font-family);
+  font-weight: bold;
+}
+
+h4 {
   color: black;
   font-family: var(--heading-font-family);
   font-weight: bold;
@@ -26,7 +32,7 @@ h1 {
 }
 
 h2 {
-  font-size: 50px;
+  font-size: 45px;
 }
 
 p {
@@ -36,7 +42,7 @@ p {
 }
 
 .hero {
-  background: var(--secondary-color);
+  background: #61b292;
   text-align: center;
   padding: 160px 20px;
 }
@@ -56,31 +62,52 @@ p {
   font-size: 24px;
 }
 
-.about-section h1 {
-  font-size: 60px;
+.content-container {
+  padding: 60px 20px;
+  background: #f1e8a7;
 }
 
-.about-section h2 {
-  font-size: 45px;
+.content h1 {
+  font-size: 42px;
+  font-weight: 900;
+  line-height: 70px;
 }
 
-.about-section h3 {
-  font-size: 20px;
+.content h2 {
   font-family: var(--default-font-family);
+  font-size: 36px;
+  color: #272142;
+  line-height: 1;
+}
+
+.content h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.content p {
+  font-size: 18px;
+  margin: 0;
+}
+
+.content {
+  margin: 30px;
 }
 
 .btn-branding {
-  background: var(--branding-color);
+  background: #61b292;
   border-radius: 4px;
-  color: white;
+  color: #fff;
   font-size: 18px;
   line-height: 27px;
   padding: 15px 30px;
 }
 
 .btn-branding-outline {
-  color: var(--branding-color);
-  border: 1px solid var(--branding-color);
+  color: #61b292;
+  border: 1px solid #61b292;
+  background: #fff;
   border-radius: 4px;
   font-size: 18px;
   line-height: 27px;
@@ -88,7 +115,36 @@ p {
 }
 
 .project-description {
-  padding: 120px 60px;
+  padding: 60px 20px;
+}
+
+.logo {
+  max-height: 40px;
+}
+
+.active {
+  color: #61b292;
+}
+
+.nav-item {
+  padding: 0 10px;
+  line-height: 14px;
+}
+
+footer .links a {
+  color: #61b292;
+  background: #fff;
+  transition: all 100ms ease-in-out;
+  padding: 10px 14px;
+  border-radius: 50%;
+  margin: 0 10px;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+footer .links a:hover {
+  background: #61b292;
+  color: #fff;
 }
 
 @media (max-width: 900px) {
@@ -103,6 +159,11 @@ p {
 
   .hero {
     padding: 80px 20px;
+  }
+
+  .content {
+    text-align: center;
+    padding: 0;
   }
 
   .project-description {
