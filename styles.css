@@ -1,0 +1,171 @@
+:root {
+  ----branding-color: #61b292;
+  --secondary-color: #f1e8a7;
+  --heading-font-family: "Playfair Display", serif;
+  --default-font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-family: var(--default-font-family);
+}
+
+h1,
+h2 {
+  font-family: var(--heading-font-family);
+  font-weight: bold;
+}
+
+h3 {
+  font-family: var(--default-font-family);
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 60px;
+  line-height: 1.5;
+}
+
+h2 {
+  font-size: 45px;
+}
+
+p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.hero {
+  background: #61b292;
+  text-align: center;
+  padding: 160px 20px;
+}
+
+.hero p {
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+  color: #272142;
+}
+
+.hero h2 {
+  font-family: var(--heading-font-family);
+  font-weight: normal;
+  line-height: 1.5;
+  font-size: 24px;
+}
+
+.content-container {
+  padding: 60px 20px;
+  background: #f1e8a7;
+}
+
+.content h1 {
+  font-size: 42px;
+  font-weight: 900;
+  line-height: 70px;
+}
+
+.content h2 {
+  font-family: var(--default-font-family);
+  font-size: 36px;
+  color: #272142;
+  line-height: 1;
+}
+
+.content h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.content p {
+  font-size: 18px;
+  margin: 0;
+}
+
+.content {
+  margin: 30px;
+}
+
+.btn-branding {
+  background: #61b292;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+}
+
+.btn-branding-outline {
+  color: #61b292;
+  border: 1px solid #61b292;
+  background: #fff;
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+}
+
+.project-description {
+  padding: 60px 20px;
+}
+
+.logo {
+  max-height: 40px;
+}
+
+.active {
+  color: #61b292;
+}
+
+.nav-item {
+  padding: 0 10px;
+  line-height: 14px;
+}
+
+footer .links a {
+  color: #61b292;
+  transition: all 100ms ease-in-out;
+  padding: 5px 7px;
+  margin: 0;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+footer .links a:hover {
+  background: #61b292;
+  color: #fff;
+}
+
+footer .github-netlify a {
+  color: #61b292;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 44px;
+    line-height: 2;
+  }
+
+  h2 {
+    font-size: 44px;
+  }
+
+  .hero {
+    padding: 80px 20px;
+  }
+
+  .content {
+    text-align: center;
+    padding: 0;
+  }
+
+  .project-description {
+    padding: 0;
+    text-align: center;
+  }
+}
