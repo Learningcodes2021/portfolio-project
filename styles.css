@@ -135,13 +135,16 @@ footer .links a {
 }
 
 footer .links a:hover {
+  text-decoration: none;
   background: #61b292;
   color: #fff;
+  cursor: pointer;
 }
 
-footer .github-netlify a {
+footer .github a {
+  text-decoration: none;
   color: #61b292;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 15px;
 }
 
